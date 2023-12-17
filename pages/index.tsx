@@ -411,7 +411,7 @@ function RequestToken(params: { address: `0x${string}` }) {
           className="btn btn-active btn-neutral mt-4 bg-green-500"
           onClick={() => {
             setLoading(true);
-            fetch("https://tokenized-ballot-backend-eftge72bo-wendecoders-projects.vercel.app/", {
+            fetch("https://tokenized-ballot-backend-wendecoders-projects.vercel.app/mint", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify(body),
